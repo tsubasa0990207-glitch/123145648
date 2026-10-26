@@ -1,0 +1,82 @@
+{
+  "workflow_order": "source inspected; local Whisper explicitly selected; content strategy approved; source boundary playback and720p preview approved; source-based1080 final rendered; final-file QA completed",
+  "source": {
+    "name": "05_011035_拜拜吃乖乖慘得腸胃炎.mp4",
+    "duration_s": 40,
+    "full_decode": "passed",
+    "unchanged": true
+  },
+  "transcription": {
+    "engine": "faster-whisper small CPU INT8",
+    "timing_confidence": "lower-confidence",
+    "word_entries": 124,
+    "cached_by_source_sha256": true,
+    "cloud_upload_for_this_source": false,
+    "source_boundaries_reviewed_by_user": true
+  },
+  "strategy": "chronological personal experience and friends expiry question; full VTuber group, big Traditional Chinese captions, two approved cards; no proven food/ritual causation asserted",
+  "preview": {
+    "file": "preview.mp4",
+    "approved_by_user": true,
+    "correction_rounds": 0
+  },
+  "final": {
+    "file": "final.mp4",
+    "duration_s": 32.177,
+    "bytes": 4361498,
+    "sha256": "83ac5761d34f6e00f5266fa23e6b6c75b1d3ee5c4d259105acd1c414d5d3e21f",
+    "streams": [
+      {
+        "codec_type": "video",
+        "codec_name": "h264",
+        "width": 1080,
+        "height": 1920,
+        "r_frame_rate": "30/1",
+        "color_space": "bt709",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709",
+        "duration": "32.166667"
+      },
+      {
+        "codec_type": "audio",
+        "codec_name": "aac",
+        "r_frame_rate": "0/0",
+        "sample_rate": "48000",
+        "channels": 2,
+        "duration": "32.177000"
+      }
+    ],
+    "full_decode": "passed exit0",
+    "all_frame_check": {
+      "decoded_frames": 965,
+      "blank_frames": [],
+      "min_spatial_variation": 29.123472163309028
+    },
+    "visual_qa": "both cuts +/-1.5s including exact boundary, head/mid/tail, text/card timing, no clipped faces or missing glyphs observed",
+    "independent_critic": "14 final-file frames; no sampled blocker; no auditory listening claimed",
+    "audio_matches_approved_preview": true,
+    "integrated_loudness_lufs": -16.01,
+    "true_peak_dbtp": -5.36,
+    "correction_rounds": 0
+  },
+  "tools": [
+    "FFmpeg/ffprobe7.1.5",
+    "faster-whisper1.2.1 small",
+    "Pillow",
+    "Source Han Sans TW"
+  ],
+  "retained_assets": [
+    "project.md",
+    "transcripts/source.whisper.json",
+    "corrected-transcript.md",
+    "edl.json",
+    "master.srt",
+    "master.ass",
+    "clips/",
+    "animations/slot_cards/",
+    "qa/",
+    "preview.mp4",
+    "final.mp4"
+  ],
+  "outstanding": "None for approved deliverable; source ASR remains lower-confidence with user-confirmed listening checks."
+}
