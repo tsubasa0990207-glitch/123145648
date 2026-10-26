@@ -1,0 +1,32 @@
+{
+  "source": "04_013510_驚悚怪夢趴兔：斷耳紫兔.mp4",
+  "source_decode": "passed",
+  "transcription": "local faster-whisper small, lower-confidence, authorized after Scribe v2 HTTP401; cached by source hash",
+  "confirmed_term": "蟾蜍",
+  "strategy_approved": true,
+  "preview_duration_s": 28.033008,
+  "video": {
+    "codec_name": "h264",
+    "width": 720,
+    "height": 1280,
+    "r_frame_rate": "30/1",
+    "color_space": "bt709",
+    "color_transfer": "bt709",
+    "color_primaries": "bt709"
+  },
+  "full_decode": "passed after latest correction",
+  "frame_check": {
+    "decoded_frames": 841,
+    "flat_background_frames": [],
+    "min_spatial_variation": 31.274185688231004
+  },
+  "loudness_lufs": -16.02,
+  "true_peak_dbtp": -5.28,
+  "visual_checks": "two cut windows +/-1.5s; head/middle/tail; glyphs/card/avatar framing; QR/ticker removed",
+  "independent_critic": "corrected visual checks passed, see qa/critic_preview/corrected_report.json",
+  "correction_rounds": 2,
+  "source_audio_playback_review": "pending user; opening9.04s is adjacent to previous ASR sentence, please check for residual trailing syllable; agent cannot hear audio",
+  "source_boundary_review_file": "source-boundary-review.mp4",
+  "preview_approved": false,
+  "final_rendered": false
+}
