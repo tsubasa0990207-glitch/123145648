@@ -1,0 +1,31 @@
+{
+  "source": "05_011035_拜拜吃乖乖慘得腸胃炎.mp4",
+  "source_decode": "passed",
+  "transcription": "local faster-whisper small CPU INT8, lower-confidence, explicitly chosen by user; cached by source SHA256",
+  "strategy_approved": true,
+  "preview_duration_s": 32.199675,
+  "video": {
+    "codec_name": "h264",
+    "width": 720,
+    "height": 1280,
+    "r_frame_rate": "30/1",
+    "color_space": "bt709",
+    "color_transfer": "bt709",
+    "color_primaries": "bt709"
+  },
+  "full_decode": "passed exit0",
+  "frame_check": {
+    "decoded_frames": 966,
+    "flat_frames": [],
+    "min_variation": 29.27742548760392
+  },
+  "visual_checks": "both cuts +/-1.5s, head/mid/tail, subtitle and card timing, group faces, chat/top ticker crop",
+  "independent_critic": "retry successful;15 rendered frames; no sampled visual blocker; full-stage framing makes individual characters relatively small",
+  "loudness_lufs": -16.01,
+  "true_peak_dbtp": -5.36,
+  "correction_rounds": 0,
+  "source_audio_boundary_review": "pending user; agent cannot hear; review source starts4.18,19.16,30.8s and all exits in attached reel",
+  "preview_approved": false,
+  "final_rendered": false,
+  "causality": "keeps self-reported illness and expiry question; no proven snack or ritual causation asserted"
+}
