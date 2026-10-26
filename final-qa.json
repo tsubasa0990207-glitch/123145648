@@ -1,0 +1,81 @@
+{
+  "workflow_order": "source inspected; transcription authorized; Scribe v2 failed401; local Whisper separately authorized; story strategy approved; source boundaries and720p preview approved; source-based1080 final rendered; final-file QA passed",
+  "source": {
+    "name": "04_013510_驚悚怪夢趴兔：斷耳紫兔.mp4",
+    "duration_s": 45,
+    "unchanged": true,
+    "full_decode": "passed"
+  },
+  "transcript": {
+    "engine": "faster-whisper small",
+    "timing_confidence": "lower-confidence",
+    "source_hash_cache": true,
+    "animal_name": "蟾蜍 confirmed by user"
+  },
+  "strategy": "chronological dream story: another dream, purple-eared white rabbit, touch, broken ear, strange dream reaction and closing; original audio, enlarged VTuber, two keyword cards",
+  "preview": {
+    "file": "preview.mp4",
+    "user_approved": true,
+    "source_boundaries_user_confirmed": true,
+    "correction_rounds": 2
+  },
+  "final": {
+    "file": "final.mp4",
+    "duration_s": 28.013,
+    "bytes": 19664901,
+    "sha256": "867332eb6cb579a690e53c0caef012c0b466d87f78407a11d7033b5ec33497a7",
+    "streams": [
+      {
+        "codec_type": "video",
+        "codec_name": "h264",
+        "width": 1080,
+        "height": 1920,
+        "r_frame_rate": "30/1",
+        "color_space": "bt709",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709",
+        "duration": "28.000000"
+      },
+      {
+        "codec_type": "audio",
+        "codec_name": "aac",
+        "r_frame_rate": "0/0",
+        "sample_rate": "48000",
+        "channels": 2,
+        "duration": "28.013000"
+      }
+    ],
+    "full_decode": "passed exit0",
+    "flat_frame_scan": {
+      "decoded_frames": 840,
+      "blank_frames": [],
+      "minimum_spatial_variation": 30.807278229601888
+    },
+    "audio_matches_approved_preview": true,
+    "integrated_loudness_lufs": -16.02,
+    "true_peak_dbtp": -5.28,
+    "visual_checks": "all two cuts +/-1.5s and exact cuts; first/middle/last, subtitle safety, avatar visibility, overlay timing; no sampled blocker",
+    "independent_visual_critic": "14 final-file frames checked; passed; no audio listening claimed",
+    "correction_rounds": 0
+  },
+  "tools": [
+    "FFmpeg/ffprobe7.1.5",
+    "faster-whisper1.2.1 CPU INT8 small",
+    "Pillow",
+    "Source Han Sans TW Regular/Bold"
+  ],
+  "retained_assets": [
+    "project.md",
+    "transcripts/source.whisper.json",
+    "corrected-transcript.md",
+    "edl.json",
+    "master.srt",
+    "master.ass",
+    "clips/",
+    "animations/slot_cards/",
+    "qa/",
+    "preview.mp4",
+    "final.mp4"
+  ],
+  "outstanding": "None for the approved deliverable; local ASR remains lower-confidence, with source edges and preview reviewed by user."
+}
