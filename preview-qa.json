@@ -1,0 +1,83 @@
+{
+  "status": "720p preview ready for user review; NOT final",
+  "source": "02_002700_邏輯大當機：忘記日本人也是外國人.mp4",
+  "source_sha256": "a49deb44d91d58a6a74f24c4a1ab3fd4813b436d5ac670adce4387ea277212a6",
+  "original_unchanged": true,
+  "transcription": "local Whisper small; lower-confidence; cached word-level timestamps; no cloud upload",
+  "strategy_approved": true,
+  "preview_approved": false,
+  "duration": "20.266341",
+  "dimensions": [
+    720,
+    1280
+  ],
+  "fps": 30,
+  "full_decode_exit_code": 0,
+  "all_frame_check": {
+    "frames": 607,
+    "min_spatial_stddev": 44.688596092241305,
+    "flat_frames": 0
+  },
+  "audio_integrated_lufs": "-16.00",
+  "audio_true_peak_dbtp": "-6.51",
+  "audio_boundary_fades_ms": 30,
+  "source_boundary_review": "12 second reel; four source edges +/-1.5s; user listening pending",
+  "critic": {
+    "artifact": "preview.mp4 after second correction pass",
+    "verdict": "No remaining sampled visual blocker",
+    "scope": "Independent read-only inspection of actual rerendered preview. No auditory listening.",
+    "evidence": {
+      "latest_frames": 12,
+      "contact": "safezone_contact.jpg",
+      "full_frame": "safezone_full14.png",
+      "cut": 16.88,
+      "cut_samples": [
+        15.38,
+        16.82,
+        16.88,
+        16.94,
+        18.38
+      ]
+    },
+    "resolved": [
+      "Subtitle anchor moved fromy1100 toy870. Sampled two-line text ends above approximatelyy950/1280, leaving bottom25% clear of dialogue.",
+      "Avatar moved upward; eyes/mouth remain unobstructed by captions.",
+      "Source topUI sliver removed by revised game crop.",
+      "Earlier 外國人/日本人 line-break corrections retained."
+    ],
+    "passed": [
+      "No sampled blank flash at exactcut16.88 or neighboring/+/-1.5s frames.",
+      "TW glyphs legible; no tofu boxes observed.",
+      "Single purple card日本人也是外國人 readable without covering dialogue/face.",
+      "Full clarification to English-speaking viewers preserved; no misleading nationality reframing observed.",
+      "No QR/chatcolumn/top ticker observed in latest samples."
+    ],
+    "blockers": [],
+    "cosmetic_notes": [
+      "Cyan source-game status strip remains behind avatar sides; sampled eyes/mouth are not obscured. No new corrective render requested for source-game UI."
+    ],
+    "limitations": [
+      "No actual audio listening. Root handles audio measurements/decode and user source-review gate.",
+      "Observed-frame checks do not prove all-frame perfection."
+    ],
+    "prior_evidence": "before_safezone_report.json/md and earlier contact/full14 images preserved."
+  },
+  "correction_passes": 2,
+  "preview_sha256": "ce900f02377d51abcdc23f2302a5909888757bdf952bc3f52bb534b4d9486b1e",
+  "final_exists": false,
+  "retained_artifacts": [
+    "project.md",
+    "transcripts/source.whisper.json",
+    "corrected-transcript.md",
+    "takes_packed.md",
+    "edl.json",
+    "master.srt",
+    "master.ass",
+    "clips/",
+    "animations/slot_cards/",
+    "tools/",
+    "qa/",
+    "preview.mp4",
+    "source-boundary-review.mp4"
+  ]
+}
