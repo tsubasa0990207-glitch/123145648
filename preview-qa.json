@@ -6,7 +6,7 @@
   "transcription": "local Whisper small; lower-confidence; cached word-level timestamps; no cloud upload",
   "strategy_approved": true,
   "preview_approved": false,
-  "duration": "20.266341",
+  "duration": "23.806641",
   "dimensions": [
     720,
     1280
@@ -14,56 +14,56 @@
   "fps": 30,
   "full_decode_exit_code": 0,
   "all_frame_check": {
-    "frames": 607,
-    "min_spatial_stddev": 44.688596092241305,
+    "frames": 714,
+    "min_spatial_stddev": 39.62715924189603,
     "flat_frames": 0
   },
-  "audio_integrated_lufs": "-16.00",
-  "audio_true_peak_dbtp": "-6.51",
+  "audio_integrated_lufs": "-16.02",
+  "audio_true_peak_dbtp": "-6.66",
   "audio_boundary_fades_ms": 30,
   "source_boundary_review": "12 second reel; four source edges +/-1.5s; user listening pending",
   "critic": {
-    "artifact": "preview.mp4 after second correction pass",
-    "verdict": "No remaining sampled visual blocker",
-    "scope": "Independent read-only inspection of actual rerendered preview. No auditory listening.",
+    "artifact": "preview.mp4 after source-opening restoration",
+    "sha256": "9a8d5d22a86bba72cc416ca0a9c2b26439168b2293e4eca5a4197da042b0dfad",
+    "verdict": "No sampled visual blocker; auditory opening restoration still requires user confirmation",
+    "scope": "Independent read-only actual rendered-frame/EDL/ASS check. No re-transcription or media modification.",
     "evidence": {
-      "latest_frames": 12,
-      "contact": "safezone_contact.jpg",
-      "full_frame": "safezone_full14.png",
-      "cut": 16.88,
-      "cut_samples": [
-        15.38,
-        16.82,
-        16.88,
-        16.94,
-        18.38
+      "frames": 12,
+      "contact": "contact.jpg",
+      "times": [
+        0.1,
+        1.5,
+        3.9,
+        5.5,
+        8.6,
+        11.5,
+        18.94,
+        20.38,
+        20.44,
+        20.5,
+        21.94,
+        23.5
       ]
     },
-    "resolved": [
-      "Subtitle anchor moved fromy1100 toy870. Sampled two-line text ends above approximatelyy950/1280, leaving bottom25% clear of dialogue.",
-      "Avatar moved upward; eyes/mouth remain unobstructed by captions.",
-      "Source topUI sliver removed by revised game crop.",
-      "Earlier 外國人/日本人 line-break corrections retained."
-    ],
-    "passed": [
-      "No sampled blank flash at exactcut16.88 or neighboring/+/-1.5s frames.",
-      "TW glyphs legible; no tofu boxes observed.",
-      "Single purple card日本人也是外國人 readable without covering dialogue/face.",
-      "Full clarification to English-speaking viewers preserved; no misleading nationality reframing observed.",
-      "No QR/chatcolumn/top ticker observed in latest samples."
-    ],
+    "checks": {
+      "source_start": "EDL first range now begins0.00 and ends20.44; cut offset20.44.",
+      "opening_captions": "ASS and actual frames show initial main sentence at3.66–6.26s; 外國人 remains intact across semantic wrap.",
+      "card": "EDL card8.02–12.10; actual8.6/11.5s frames contain readable single purple card.",
+      "cut": "Exact20.44s and nearby20.38/20.50s plus +/-1.5s samples retain composition; no blank flash.",
+      "safezone": "Approved subtitle anchor870 maintained; two-line blocks above bottom25%UI region.",
+      "face_glyphs": "VTuber eyes/mouth visible; no missing Chinese glyph boxes.",
+      "tail": "Normal frame and final sentence at23.5s."
+    },
     "blockers": [],
-    "cosmetic_notes": [
-      "Cyan source-game status strip remains behind avatar sides; sampled eyes/mouth are not obscured. No new corrective render requested for source-game UI."
-    ],
+    "cosmetic_findings": [],
     "limitations": [
-      "No actual audio listening. Root handles audio measurements/decode and user source-review gate.",
-      "Observed-frame checks do not prove all-frame perfection."
-    ],
-    "prior_evidence": "before_safezone_report.json/md and earlier contact/full14 images preserved."
+      "No audio listening performed; source-start0.00 and shifted captions are visually/structurally confirmed, not proof of auditory word completeness.",
+      "Root separately checks source/output waveform correlation and technical QA.",
+      "User must hear the restored opening before preview approval."
+    ]
   },
-  "correction_passes": 2,
-  "preview_sha256": "ce900f02377d51abcdc23f2302a5909888757bdf952bc3f52bb534b4d9486b1e",
+  "correction_passes": 3,
+  "preview_sha256": "9a8d5d22a86bba72cc416ca0a9c2b26439168b2293e4eca5a4197da042b0dfad",
   "final_exists": false,
   "retained_artifacts": [
     "project.md",
@@ -79,5 +79,291 @@
     "qa/",
     "preview.mp4",
     "source-boundary-review.mp4"
-  ]
+  ],
+  "user_requested_corrections": 1,
+  "opening_fix": "First source range restored to source0.00 through20.44, preserving complete original opening; user listening confirmation pending",
+  "opening_audio_continuity": {
+    "purpose": "Verify preview preserves uninterrupted original audio from source beginning through first range; does not claim auditory judgment",
+    "source_range_start_s": 0,
+    "first_range_end_s": 20.44,
+    "estimated_audio_offset_samples": 341,
+    "estimated_audio_offset_s": 0.0213125,
+    "min_half_second_correlation": 0.9544813063073436,
+    "all_tested_windows_pass": true,
+    "windows": [
+      {
+        "source_start_s": 0.15,
+        "duration_s": 0.5,
+        "waveform_correlation": 0.9977857268576136,
+        "source_rms": 0.03577417724737356,
+        "preview_rms": 0.020333404653786837
+      },
+      {
+        "source_start_s": 0.65,
+        "duration_s": 0.5,
+        "waveform_correlation": 0.9964244077192718,
+        "source_rms": 0.023024766848417755,
+        "preview_rms": 0.013021778866005244
+      },
+      {
+        "source_start_s": 1.15,
+        "duration_s": 0.5,
+        "waveform_correlation": 0.9986996762624103,
+        "source_rms": 0.07022781010787783,
+        "preview_rms": 0.040117241964522564
+      },
+      {
+        "source_start_s": 1.65,
+        "duration_s": 0.5,
+        "waveform_correlation": 0.999367643848921,
+        "source_rms": 0.06765295184387027,
+        "preview_rms": 0.03859516908810938
+      },
+      {
+        "source_start_s": 2.15,
+        "duration_s": 0.5,
+        "waveform_correlation": 0.9963263964645018,
+        "source_rms": 0.030395124043377537,
+        "preview_rms": 0.017269196653929404
+      },
+      {
+        "source_start_s": 2.65,
+        "duration_s": 0.5,
+        "waveform_correlation": 0.9939147873374762,
+        "source_rms": 0.028039152957815696,
+        "preview_rms": 0.015836270429054077
+      },
+      {
+        "source_start_s": 3.15,
+        "duration_s": 0.5,
+        "waveform_correlation": 0.9967425818483034,
+        "source_rms": 0.05165906563783771,
+        "preview_rms": 0.02937742451977626
+      },
+      {
+        "source_start_s": 3.65,
+        "duration_s": 0.5,
+        "waveform_correlation": 0.9938145564825253,
+        "source_rms": 0.12558924542325922,
+        "preview_rms": 0.07180603795336324
+      },
+      {
+        "source_start_s": 4.15,
+        "duration_s": 0.5,
+        "waveform_correlation": 0.9891174645493809,
+        "source_rms": 0.312928984875988,
+        "preview_rms": 0.17921077348600853
+      },
+      {
+        "source_start_s": 4.65,
+        "duration_s": 0.5,
+        "waveform_correlation": 0.9825678607387615,
+        "source_rms": 0.2562349566239854,
+        "preview_rms": 0.14612370630530658
+      },
+      {
+        "source_start_s": 5.15,
+        "duration_s": 0.5,
+        "waveform_correlation": 0.9932149830646442,
+        "source_rms": 0.2953898357437631,
+        "preview_rms": 0.16901613600483387
+      },
+      {
+        "source_start_s": 5.65,
+        "duration_s": 0.5,
+        "waveform_correlation": 0.9916122939032195,
+        "source_rms": 0.3088961189185133,
+        "preview_rms": 0.17643160691268328
+      },
+      {
+        "source_start_s": 6.15,
+        "duration_s": 0.5,
+        "waveform_correlation": 0.9891460337873689,
+        "source_rms": 0.17727047274865454,
+        "preview_rms": 0.10127550930753589
+      },
+      {
+        "source_start_s": 6.65,
+        "duration_s": 0.5,
+        "waveform_correlation": 0.9917907727608332,
+        "source_rms": 0.31495674739395674,
+        "preview_rms": 0.18068030711874902
+      },
+      {
+        "source_start_s": 7.15,
+        "duration_s": 0.5,
+        "waveform_correlation": 0.9862285126240318,
+        "source_rms": 0.2819885667683423,
+        "preview_rms": 0.16127740592412543
+      },
+      {
+        "source_start_s": 7.65,
+        "duration_s": 0.5,
+        "waveform_correlation": 0.9906630113780729,
+        "source_rms": 0.2614667413222191,
+        "preview_rms": 0.14963877824958635
+      },
+      {
+        "source_start_s": 8.15,
+        "duration_s": 0.5,
+        "waveform_correlation": 0.9941427820354406,
+        "source_rms": 0.3234236621110606,
+        "preview_rms": 0.18525257118983943
+      },
+      {
+        "source_start_s": 8.65,
+        "duration_s": 0.5,
+        "waveform_correlation": 0.9794146190876777,
+        "source_rms": 0.2839537687527196,
+        "preview_rms": 0.162637357362819
+      },
+      {
+        "source_start_s": 9.15,
+        "duration_s": 0.5,
+        "waveform_correlation": 0.9912616225566897,
+        "source_rms": 0.29407927727491684,
+        "preview_rms": 0.1682706065798317
+      },
+      {
+        "source_start_s": 9.65,
+        "duration_s": 0.5,
+        "waveform_correlation": 0.9544813063073436,
+        "source_rms": 0.24531173954065463,
+        "preview_rms": 0.13994075108598364
+      },
+      {
+        "source_start_s": 10.15,
+        "duration_s": 0.5,
+        "waveform_correlation": 0.9923028183545257,
+        "source_rms": 0.30699983501769945,
+        "preview_rms": 0.17588641607669853
+      },
+      {
+        "source_start_s": 10.65,
+        "duration_s": 0.5,
+        "waveform_correlation": 0.9927057446191166,
+        "source_rms": 0.2704612093303641,
+        "preview_rms": 0.1547259930929684
+      },
+      {
+        "source_start_s": 11.15,
+        "duration_s": 0.5,
+        "waveform_correlation": 0.9958042548697953,
+        "source_rms": 0.3093631359744383,
+        "preview_rms": 0.17730425114780832
+      },
+      {
+        "source_start_s": 11.65,
+        "duration_s": 0.5,
+        "waveform_correlation": 0.9948831212012931,
+        "source_rms": 0.29298461283516536,
+        "preview_rms": 0.16778949604714244
+      },
+      {
+        "source_start_s": 12.15,
+        "duration_s": 0.5,
+        "waveform_correlation": 0.9888033126224945,
+        "source_rms": 0.21938841444083945,
+        "preview_rms": 0.12552018631488157
+      },
+      {
+        "source_start_s": 12.65,
+        "duration_s": 0.5,
+        "waveform_correlation": 0.9888764343218254,
+        "source_rms": 0.2938325587468311,
+        "preview_rms": 0.16829481245194794
+      },
+      {
+        "source_start_s": 13.15,
+        "duration_s": 0.5,
+        "waveform_correlation": 0.9800016297204738,
+        "source_rms": 0.2655493172133508,
+        "preview_rms": 0.15181647448358124
+      },
+      {
+        "source_start_s": 13.65,
+        "duration_s": 0.5,
+        "waveform_correlation": 0.9792106367716145,
+        "source_rms": 0.25094783350929584,
+        "preview_rms": 0.14346720149903347
+      },
+      {
+        "source_start_s": 14.15,
+        "duration_s": 0.5,
+        "waveform_correlation": 0.9808364390650242,
+        "source_rms": 0.3152381931627265,
+        "preview_rms": 0.18053874186367963
+      },
+      {
+        "source_start_s": 14.65,
+        "duration_s": 0.5,
+        "waveform_correlation": 0.9768362358419779,
+        "source_rms": 0.19957101776972858,
+        "preview_rms": 0.1141289849475878
+      },
+      {
+        "source_start_s": 15.15,
+        "duration_s": 0.5,
+        "waveform_correlation": 0.9679126433983216,
+        "source_rms": 0.20368192653514183,
+        "preview_rms": 0.1164711560824184
+      },
+      {
+        "source_start_s": 15.65,
+        "duration_s": 0.5,
+        "waveform_correlation": 0.9630367557828131,
+        "source_rms": 0.2859525650754255,
+        "preview_rms": 0.16326333206273078
+      },
+      {
+        "source_start_s": 16.15,
+        "duration_s": 0.5,
+        "waveform_correlation": 0.9870631212105327,
+        "source_rms": 0.3094814085156368,
+        "preview_rms": 0.1767503067861573
+      },
+      {
+        "source_start_s": 16.65,
+        "duration_s": 0.5,
+        "waveform_correlation": 0.9894405442755574,
+        "source_rms": 0.33601078297912174,
+        "preview_rms": 0.19214265004602776
+      },
+      {
+        "source_start_s": 17.15,
+        "duration_s": 0.5,
+        "waveform_correlation": 0.985994520332029,
+        "source_rms": 0.27124196810795265,
+        "preview_rms": 0.15524726106994985
+      },
+      {
+        "source_start_s": 17.65,
+        "duration_s": 0.5,
+        "waveform_correlation": 0.991369306403699,
+        "source_rms": 0.3100696908387129,
+        "preview_rms": 0.17688173514726052
+      },
+      {
+        "source_start_s": 18.15,
+        "duration_s": 0.5,
+        "waveform_correlation": 0.9942483182010834,
+        "source_rms": 0.27925952768357565,
+        "preview_rms": 0.1596174562688911
+      },
+      {
+        "source_start_s": 18.65,
+        "duration_s": 0.5,
+        "waveform_correlation": 0.9932351287691176,
+        "source_rms": 0.31027870949268055,
+        "preview_rms": 0.17762789127728512
+      },
+      {
+        "source_start_s": 19.15,
+        "duration_s": 0.5,
+        "waveform_correlation": 0.9921758751831662,
+        "source_rms": 0.24401389981231386,
+        "preview_rms": 0.13956093231082797
+      }
+    ]
+  }
 }
