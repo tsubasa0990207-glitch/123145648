@@ -1,0 +1,120 @@
+{
+  "status": "formal final passed final-file QA",
+  "final_sha256": "d39c49b0d916bfc11541b867a5596e31605b0a4dc8d8f784913692bb82129ee6",
+  "source_sha256": "a49deb44d91d58a6a74f24c4a1ab3fd4813b436d5ac670adce4387ea277212a6",
+  "source_unchanged": true,
+  "source_full_decode_exit_code": 0,
+  "transcription": "local faster-whisper small, cached word-level timestamps, lower-confidence; user explicitly chose local; no cloud upload",
+  "approved_strategy": "chronological foreign-viewer surprise, Japanese-viewer self-correction, English-viewer clarification, self-deprecating ending; original audio, large TW subtitles, one purple keyword card",
+  "preview_path": "preview.mp4",
+  "preview_sha256": "9a8d5d22a86bba72cc416ca0a9c2b26439168b2293e4eca5a4197da042b0dfad",
+  "preview_approval": "user 確認無誤 after restored opening audio; preview QA passed",
+  "preview_full_decode_exit_code": 0,
+  "final_path": "final.mp4",
+  "final_full_decode_exit_code": 0,
+  "duration_s": 23.806,
+  "dimensions": [
+    1080,
+    1920
+  ],
+  "fps": 30,
+  "color": "Rec.709",
+  "codec": "H264/AAC",
+  "audio_integrated_lufs": "-16.02",
+  "audio_true_peak_dbtp": "-6.66",
+  "approved_audio_packet_match": {
+    "aac_packet_hash": "SHA256=01a4bfadb4aff2ed96bb82ff9471b0b82efa204930a944c5aaa4c9892ac2489d",
+    "matches_approved_preview": true
+  },
+  "all_frame_check": {
+    "frames": 714,
+    "min_spatial_stddev": 39.74497684158521,
+    "flat_frames": 0
+  },
+  "root_visual_QA": "Actual final head/mid/tail, card and cut20.44 +/-1.5 frames/waveform inspected; subtitle safe area and visible face confirmed",
+  "independent_critic": {
+    "artifact": "final.mp4",
+    "sha256": "d39c49b0d916bfc11541b867a5596e31605b0a4dc8d8f784913692bb82129ee6",
+    "verdict": "No sampled visual blocker",
+    "scope": "Independent actual-final visual inspection, not source or preview. No media edits.",
+    "evidence": {
+      "frames": 12,
+      "times": [
+        0.1,
+        1.5,
+        3.9,
+        5.5,
+        8.6,
+        11.5,
+        18.94,
+        20.38,
+        20.44,
+        20.5,
+        21.94,
+        23.5
+      ],
+      "contact": "critic_contact.jpg",
+      "probe": "critic_probe.json",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "duration_s": 23.806,
+      "color_tags": [
+        "bt709",
+        "bt709",
+        "bt709"
+      ]
+    },
+    "checks": {
+      "head": "First0.1/1.5s frames contain source-opening composition; no sampled blank start.",
+      "opening_subtitles": "3.9/5.5s main opening captions legible; semantic wraps preserve 外國人.",
+      "card": "8.6/11.5s approved日本人也是外國人 card visible, no face/caption occlusion.",
+      "cut": "Exact20.44s plus20.38/20.50 and+/-1.5s samples show normal composition, no blank flash.",
+      "tail": "23.5s final line and composition normal.",
+      "safezone": "Dialogue remains near870/1280-equivalent, below face and above bottom25%UI area.",
+      "face": "Avatar eyes/mouth visible in sampled frames.",
+      "glyphs": "Readable TW Chinese; no missing glyph boxes.",
+      "color": "Visual source-game colors coherent; Rec.709 metadata confirmed.",
+      "source_overlays": "No QR/chatcolumn/top ticker observed; retained cyan game stats behind avatar sides do not obscure sampled eyes/mouth."
+    },
+    "blockers": [],
+    "cosmetic_findings": [],
+    "limitations": [
+      "Critic did not listen to audio. Parent records user explicitly confirmed corrected opening and approved preview.",
+      "Root separately checks full decode, source/output waveform correlation, AAC match and loudness.",
+      "Sampling does not prove every-frame visual perfection."
+    ]
+  },
+  "preview_evidence_correction_rounds": 2,
+  "user_requested_opening_audio_correction_rounds": 1,
+  "final_correction_rounds": 0,
+  "tools": [
+    "FFmpeg7.1.5",
+    "ffprobe7.1.5",
+    "faster-whisper small",
+    "Pillow",
+    "PyAV",
+    "video-use timeline helper"
+  ],
+  "retained_artifacts": [
+    "project.md",
+    "transcripts/source.whisper.json",
+    "corrected-transcript.md",
+    "takes_packed.md",
+    "edl.json",
+    "master.srt",
+    "master.ass",
+    "clips/",
+    "animations/slot_cards/",
+    "tools/",
+    "qa/",
+    "preview.mp4",
+    "final.mp4"
+  ],
+  "limitations": [
+    "Whisper lower-confidence; user listened and approved corrected opening/full preview",
+    "Agent measured audio and inspected waveform; no actual auditory listening"
+  ],
+  "unresolved_issues": []
+}

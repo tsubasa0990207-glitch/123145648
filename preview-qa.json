@@ -1,11 +1,11 @@
 {
-  "status": "720p preview ready for user review; NOT final",
+  "status": "Approved preview retained; final rendered separately for final-file QA",
   "source": "02_002700_邏輯大當機：忘記日本人也是外國人.mp4",
   "source_sha256": "a49deb44d91d58a6a74f24c4a1ab3fd4813b436d5ac670adce4387ea277212a6",
   "original_unchanged": true,
   "transcription": "local Whisper small; lower-confidence; cached word-level timestamps; no cloud upload",
   "strategy_approved": true,
-  "preview_approved": false,
+  "preview_approved": true,
   "duration": "23.806641",
   "dimensions": [
     720,
@@ -365,5 +365,6 @@
         "preview_rms": 0.13956093231082797
       }
     ]
-  }
+  },
+  "preview_approval": "使用者確認無誤；開場原聲修正版已核准"
 }
