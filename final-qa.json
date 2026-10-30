@@ -1,0 +1,125 @@
+{
+  "status": "formal final passed final-file QA",
+  "final_sha256": "319374e42f81a418068526916fda75f12059fd65cba809c3842df278f3c9579d",
+  "source": {
+    "source": "/workspace/media/1jVsdapTt3pYAZtsgmO3dlPxap25y3Ce9/吃飯時間！一起突襲！《突襲：暗影傳說》 [dMEv_slUMWY].mp4",
+    "sha256": "0df058ae7e9780d116a8a73745f4b64a247573708ea667611656f3ab17fb5a2e",
+    "size": 3363757452
+  },
+  "original_unchanged": true,
+  "source_duration_s": 5849,
+  "source_full_decode_exit_code": 0,
+  "transcription": "Local faster-whisper small,20 cached parts,3161 word entries,lower-confidence; user explicitly chose local; no media upload to ElevenLabs",
+  "strategy": "Originally planned stream missed by sleeping overnight; original-order continuous story, large SourceHanTW captions,one purple keyword card; no added music/effects/Broll/CTA",
+  "user_caption_correction": "我會笑是因為",
+  "preview_path": "preview.mp4",
+  "preview_sha256": "ee6e71f30d57b50e5afa53150a08860b72ee2832d52571ffe1f0d0203fc791a2",
+  "preview_full_decode_exit_code": 0,
+  "preview_approved": true,
+  "source_boundaries_approved": true,
+  "user_approval": "邊界正常、核准預覽",
+  "final_path": "final.mp4",
+  "final_duration_s": 21.733333,
+  "dimensions": [
+    1080,
+    1920
+  ],
+  "fps": 30,
+  "color": "Rec.709",
+  "codec": "H264/AAC",
+  "final_full_decode_exit_code": 0,
+  "final_all_frame_check": {
+    "frames": 652,
+    "min_spatial_stddev": 41.77499742949701,
+    "flat_frames": 0
+  },
+  "final_audio_packet_match": {
+    "aac_packet_hash": "SHA256=c8f6ae59c7e69b62e9b039f06538416db52ff2f1bdd53b4ce356b52a4e61fb16",
+    "matches_approved_preview": true
+  },
+  "audio_integrated_lufs": "-16.00",
+  "audio_true_peak_dbtp": "-5.22",
+  "root_QA": "Actual final head/mid/tail/card and subtitle safe-area visually inspected; no internal EDL cuts, source onset/ending auditory confirmation supplied by user",
+  "independent_final_critic": {
+    "artifact": "final.mp4",
+    "sha256": "319374e42f81a418068526916fda75f12059fd65cba809c3842df278f3c9579d",
+    "verdict": "No sampled visual blocker",
+    "scope": "Independent read-only actual-final critique, not source/preview. No audio listening.",
+    "evidence": {
+      "frames": 13,
+      "times": [
+        0.3,
+        1,
+        2,
+        3,
+        5.5,
+        6.8,
+        8.2,
+        9.7,
+        13.2,
+        16.2,
+        18.7,
+        20,
+        21.3
+      ],
+      "contact": "critic_contact.jpg",
+      "probe": "critic_probe.json",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "duration_s": 21.733333,
+      "color_metadata": "bt709 primaries/transfer/matrix"
+    },
+    "checks": {
+      "opening": "User-confirmed 我會笑是因為 visible at0.3/1s in final file.",
+      "semantic_wraps": "Sampled93px-equivalent captions readable and semantically intact; no missing glyphs.",
+      "face": "Enlarged avatar eyes/mouth visible in every sampled frame.",
+      "safezone": "Dialogue band below face and above bottom25%UI area; two-line captions do not overlap face.",
+      "card": "躺一下→隔天早上 card visible6.8/8.2s and fading9.7s, readable without face/caption obstruction.",
+      "continuity": "Single continuous source239.83–261.55, no internal EDL cut; no sampled blank flash during natural source game/menu changes.",
+      "tail": "Normal composition at20/21.3s, no sampled blank tail.",
+      "source_overlays": "No QR/chatcolumn/creator ticker observed; game-native UI remains as approved background.",
+      "color": "Visual palette coherent across sample; Rec.709 metadata confirmed."
+    },
+    "blockers": [],
+    "cosmetic_findings": [],
+    "limitations": [
+      "No auditory listening by critic. Parent records user approved boundaries and preview.",
+      "Root handles full decode, all-frame scan, AAC hash match and audio measurements.",
+      "Sampling establishes observed-frame checks, not every-frame perfection."
+    ]
+  },
+  "preview_self_fix_rounds": 0,
+  "final_self_fix_rounds": 0,
+  "layout_preparation_adjustment": "Centered avatar before complete preview",
+  "tools": [
+    "FFmpeg7.1.5",
+    "ffprobe7.1.5",
+    "faster-whisper small",
+    "Pillow",
+    "PyAV",
+    "video-use timeline helper"
+  ],
+  "retained_artifacts": [
+    "project.md",
+    "transcripts/source.whisper.json",
+    "transcripts/source.part-*.json",
+    "corrected-transcript.md",
+    "takes_packed.md",
+    "edl.json",
+    "master.srt",
+    "master.ass",
+    "clips/",
+    "animations/slot_cards/",
+    "tools/",
+    "qa/",
+    "preview.mp4",
+    "final.mp4"
+  ],
+  "limitations": [
+    "Whisper timestamps lower-confidence; user heard and approved source boundaries/complete preview",
+    "Agent measured audio and inspected waveforms but did not listen"
+  ],
+  "unresolved_issues": []
+}

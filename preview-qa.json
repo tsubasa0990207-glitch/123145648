@@ -10,7 +10,7 @@
   "transcription": "local faster-whisper small, 20 cached source parts,3161 word entries; lower-confidence; no cloud upload",
   "user_text_correction": "微笑是因為 corrected by user to 我會笑是因為",
   "strategy_approved": true,
-  "preview_approved": false,
+  "preview_approved": true,
   "source_kept_range": [
     239.83,
     261.55
@@ -82,7 +82,7 @@
     ],
     "approval_state": "Preview not yet approved by user; no final authorized."
   },
-  "source_boundary_review": "source-boundary-review.mp4;6seconds; user auditory approval pending",
+  "source_boundary_review": "6-second source edges heard and approved by user",
   "preview_self_fix_rounds": 0,
   "layout_preparation_adjustment": "Avatar crop centered fromx700 tox600 before complete preview",
   "final_exists": false,
@@ -102,7 +102,6 @@
     "opening-review.mp4",
     "source-boundary-review.mp4"
   ],
-  "unresolved": [
-    "User must hear source boundaries and approve full720p preview before final render"
-  ]
+  "unresolved": [],
+  "approval_text": "邊界正常、核准預覽"
 }
