@@ -1,0 +1,108 @@
+{
+  "status": "720p complete preview ready for user review; not final",
+  "source": {
+    "source": "/workspace/media/1jVsdapTt3pYAZtsgmO3dlPxap25y3Ce9/吃飯時間！一起突襲！《突襲：暗影傳說》 [dMEv_slUMWY].mp4",
+    "sha256": "0df058ae7e9780d116a8a73745f4b64a247573708ea667611656f3ab17fb5a2e",
+    "size": 3363757452
+  },
+  "source_full_decode_exit_code": 0,
+  "source_unchanged": true,
+  "transcription": "local faster-whisper small, 20 cached source parts,3161 word entries; lower-confidence; no cloud upload",
+  "user_text_correction": "微笑是因為 corrected by user to 我會笑是因為",
+  "strategy_approved": true,
+  "preview_approved": false,
+  "source_kept_range": [
+    239.83,
+    261.55
+  ],
+  "internal_editorial_cuts": 0,
+  "duration_s": 21.733008,
+  "dimensions": [
+    720,
+    1280
+  ],
+  "fps": 30,
+  "color": "Rec.709",
+  "preview_sha256": "ee6e71f30d57b50e5afa53150a08860b72ee2832d52571ffe1f0d0203fc791a2",
+  "preview_full_decode_exit_code": 0,
+  "all_frame_scan": {
+    "frames": 651,
+    "min_spatial_stddev": 41.56209216697831,
+    "flat_frames": 0
+  },
+  "audio_lufs": "-16.00",
+  "audio_true_peak_dbtp": "-5.22",
+  "audio_boundary_fades_ms": 30,
+  "root_visual_qa": "Actual preview head/mid/tail/card and source start/end +/-1.5 waveform/frame samples checked; no visible issue",
+  "independent_critic": {
+    "artifact": "preview.mp4",
+    "sha256": "ee6e71f30d57b50e5afa53150a08860b72ee2832d52571ffe1f0d0203fc791a2",
+    "verdict": "No sampled visual blocker",
+    "scope": "Independent read-only critique of actual overslept-stream preview, EDL and ASS. No media modifications or auditory listening.",
+    "evidence": {
+      "frames": 17,
+      "times": [
+        0.3,
+        1,
+        2,
+        3,
+        4,
+        5.5,
+        6.8,
+        8.2,
+        9.7,
+        12,
+        13.2,
+        14.8,
+        16.2,
+        17.6,
+        18.7,
+        20,
+        21.3
+      ],
+      "contact": "contact.jpg",
+      "probe": "probe.json"
+    },
+    "checks": {
+      "opening": "Actual0.3/1s frames show user-corrected 我會笑是因為; no missing glyphs.",
+      "semantic_wraps": "All sampled captions have intact words/phrases; no split 外國/人 type issue observed.",
+      "safezone": "Subtitles anchored870 on1280canvas; two-line text above bottom25% region, face/caption separated.",
+      "face": "Enlarged VTuber eyes/mouth visible at all sampled times.",
+      "card": "Single躺一下→隔天早上 card readable, visible at6.8/8.2 and fading9.7, no caption/face overlap.",
+      "composition": "Original game/menu background retained; no QR, creator ticker or chatcolumn observed. Game-native labels remain as background.",
+      "continuity": "EDL is one continuous239.83–261.55 source range with no internal editorial cuts; no sampled blank/flash around natural game-screen changes.",
+      "tail": "Normal composition at20/21.3s; absence of last2s caption consistent with ASS ending19.34s rather than missing video."
+    },
+    "blockers": [],
+    "cosmetic_findings": [],
+    "limitations": [
+      "No audio listening performed. User source-boundary hearing remains pending per parent context.",
+      "Root handles numerical audio/full decode/all-frame scans/source comparison.",
+      "Visual frame sampling does not establish all-frame perfection."
+    ],
+    "approval_state": "Preview not yet approved by user; no final authorized."
+  },
+  "source_boundary_review": "source-boundary-review.mp4;6seconds; user auditory approval pending",
+  "preview_self_fix_rounds": 0,
+  "layout_preparation_adjustment": "Avatar crop centered fromx700 tox600 before complete preview",
+  "final_exists": false,
+  "retained_artifacts": [
+    "project.md",
+    "transcripts/source.whisper.json",
+    "corrected-transcript.md",
+    "takes_packed.md",
+    "edl.json",
+    "master.srt",
+    "master.ass",
+    "clips/",
+    "animations/slot_cards/",
+    "tools/",
+    "qa/",
+    "preview.mp4",
+    "opening-review.mp4",
+    "source-boundary-review.mp4"
+  ],
+  "unresolved": [
+    "User must hear source boundaries and approve full720p preview before final render"
+  ]
+}
